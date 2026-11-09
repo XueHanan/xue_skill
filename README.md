@@ -2,9 +2,19 @@
 
 用于中文学位论文润色的两个 AI Agent 技能：**xue** 和 **xue-plus**。支持小段文字直接润色，以及 DOCX 章节的逐段对照、公式标记和内容核对。默认输出对照稿，不写回原 Word。
 
-当前版本：**v2.0（2026-11-09）**。
+当前版本：**v2.1（2026-11-09）**。
 
-**[下载 v2.0 技能包 ZIP](https://github.com/XueHanan/xue_skill/raw/refs/heads/main/dist/xue-skills%282.0%29.zip)** · [历史 v1.0 技能包](https://github.com/XueHanan/xue_skill/raw/refs/heads/main/dist/xue-skills%281.0%29.zip) · [xue 技能说明](xue/SKILL.md) · [xue-plus 技能说明](xue-plus/SKILL.md)
+**[下载 v2.1 技能包 ZIP](https://github.com/XueHanan/xue_skill/raw/refs/heads/main/dist/xue-skills%282.1%29.zip)** · [历史 v2.0 技能包](https://github.com/XueHanan/xue_skill/raw/refs/heads/main/dist/xue-skills%282.0%29.zip) · [历史 v1.0 技能包](https://github.com/XueHanan/xue_skill/raw/refs/heads/main/dist/xue-skills%281.0%29.zip) · [xue 技能说明](xue/SKILL.md) · [xue-plus 技能说明](xue-plus/SKILL.md)
+
+## v2.1 更新
+
+- 论文正文优先从定义、机制、关系及适用条件展开抽象论述，避免例如等引例表达、教学式具体演示和仅删除引例词的表面改写。
+- 区分说明性示例与真实实验结果、实际模型配置、对比数据和推导所需条件，保留必要的技术证据；说明性数值删减需人工复核并如实报告自动校验结果。
+- 补充数学表达与指代规范，明确张量向量化、雅可比矩阵和恒等连接的关系，区分数学表示与实际网络操作，核对公式占位符。
+- 避免仍可按……理解等面向读者的讲解式表达，直接陈述结构调整、下采样倍数和空间映射关系，保留事实、适用条件及必要限定。
+- 两个技能入口与风格参考同步更新；处理脚本、任务结构及自动校验口径与 v2.0 相同。
+
+v1.0、v2.0 保留在 `dist/` 作为历史下载版本；仓库当前两个技能目录对应 v2.1。
 
 ## v2.0 更新
 
@@ -12,8 +22,6 @@
 - 明确保留合理的把字句，按句法位置判断如何的使用，调整关注如何、对……而言、一并／共同考虑／统筹等在指定语境下的表达。
 - 两个入口均指向 `references/styles.md` 的用户偏好部分，两份风格参考保持一致。这些偏好只用于当前授权范围内的同类叙述，不扩大为全篇禁令。
 - 本次是风格规则迭代，处理脚本、任务结构与校验口径均与 v1.0 相同，不涉及脚本不兼容或任务格式迁移。安装新版仍建议整体替换技能目录。
-
-v1.0 保留在 `dist/`，作为历史下载版本；仓库当前两个技能目录对应 v2.0。
 
 ## 选择技能
 
@@ -67,7 +75,7 @@ git clone https://github.com/XueHanan/xue_skill.git
 cd xue_skill
 ```
 
-仓库根目录的 `xue/` 与 `xue-plus/` 即为当前 v2.0 的可安装技能。`dist/xue-skills(2.0).zip` 是上传时的原始 v2.0 技能包，保留原文件内容；`dist/xue-skills(1.0).zip` 保留历史 v1.0。
+仓库根目录的 `xue/` 与 `xue-plus/` 即为当前 v2.1 的可安装技能。`dist/xue-skills(2.1).zip` 为本次发布包，包内技能文件与仓库当前目录一致；`dist/xue-skills(2.0).zip` 和 `dist/xue-skills(1.0).zip` 保留历史版本。
 
 ## 使用示例
 
