@@ -28,7 +28,7 @@ description: 仅在用户点名 xue-plus 时，润色中文学位论文的摘要
 1. 根据内容选择摘要、方法、实验、结论等模式。混合章节按小节功能处理，不固定把第 2 章或第 3 章归入某一种。
 2. 小段纯文本直接提供原文、改后和简要改动，人工核对含义；不强制跑脚本，也不声称已执行自动校验。
 3. DOCX、完整章节、复杂公式或用户要求自动核对时，读 [workflow.md](references/workflow.md)，建立本次处理清单和受保护术语表。
-4. 按需读取 [styles.md](references/styles.md)。参考 PDF 可选；没有参考材料时直接按保守的表达改进原则处理。
+4. 按需读取 [styles.md](references/styles.md)；作者已确认的取舍见该文件「用户偏好」。参考 PDF 可选；没有参考材料时直接按保守的表达改进原则处理。
 5. 文件流程按 [verification.md](references/verification.md) 统一检查。当前代理逐段复核命题、数值及引文归属、条件、步骤和术语，写明依据；不固定要求用户再次授权。
 6. 按 [output-template.md](references/output-template.md) 交付。任何正文变更均使旧复核记录失效；重新核对并运行统一验证。
 

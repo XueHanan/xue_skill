@@ -28,7 +28,7 @@ description: 仅在用户点名 xue 时，润色中文学位论文的绪论与�
 1. 判断章节功能和处理范围。范围明确时直接完成可审阅稿，不固定要求用户逐项勾选，不安排固定的多轮改写。
 2. 小段纯文本采用轻量模式：直接给原文、改后与简要改动，逐项核对技术含义；无需建立工作目录，不声称已通过脚本验证。
 3. DOCX、完整章节、复杂公式或用户要求自动核对时，读取 [workflow.md](references/workflow.md)，用提供的脚本建立处理清单，再按清单改写。
-4. 按当前功能读取 [styles.md](references/styles.md) 的相关部分。没有参考 PDF 时直接处理；有参考 PDF 时只提炼相关语体特征，不照搬表达或事实。
+4. 按当前功能读取 [styles.md](references/styles.md) 的相关部分；作者已确认的取舍见该文件「用户偏好」。没有参考 PDF 时直接处理；有参考 PDF 时只提炼相关语体特征，不照搬表达或事实。
 5. 文件流程中按 [verification.md](references/verification.md) 做统一验证。修改后的段落由当前代理完成有具体依据的语义复核，不额外要求用户审批；疑点无法解决时保留原句或明确待复核。
 6. 交付遵循 [output-template.md](references/output-template.md)。正文再次变化后，重新生成复核记录与最终校验，使用当前 validation.json 指向的结果。
 

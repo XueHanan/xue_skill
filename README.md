@@ -2,7 +2,18 @@
 
 用于中文学位论文润色的两个 AI Agent 技能：**xue** 和 **xue-plus**。支持小段文字直接润色，以及 DOCX 章节的逐段对照、公式标记和内容核对。默认输出对照稿，不写回原 Word。
 
-**[下载 v1.0 技能包 ZIP](https://github.com/XueHanan/xue_skill/raw/refs/heads/main/dist/xue-skills%281.0%29.zip)** · [xue 技能说明](xue/SKILL.md) · [xue-plus 技能说明](xue-plus/SKILL.md)
+当前版本：**v2.0（2026-11-09）**。
+
+**[下载 v2.0 技能包 ZIP](https://github.com/XueHanan/xue_skill/raw/refs/heads/main/dist/xue-skills%282.0%29.zip)** · [历史 v1.0 技能包](https://github.com/XueHanan/xue_skill/raw/refs/heads/main/dist/xue-skills%281.0%29.zip) · [xue 技能说明](xue/SKILL.md) · [xue-plus 技能说明](xue-plus/SKILL.md)
+
+## v2.0 更新
+
+- 根据作者已确认的改写例，补充段首判断句、分号对举、场景要求作主语等表达偏好，减少叙述句中提示加解释式的冒号。
+- 明确保留合理的把字句，按句法位置判断如何的使用，调整关注如何、对……而言、一并／共同考虑／统筹等在指定语境下的表达。
+- 两个入口均指向 `references/styles.md` 的用户偏好部分，两份风格参考保持一致。这些偏好只用于当前授权范围内的同类叙述，不扩大为全篇禁令。
+- 本次是风格规则迭代，处理脚本、任务结构与校验口径均与 v1.0 相同，不涉及脚本不兼容或任务格式迁移。安装新版仍建议整体替换技能目录。
+
+v1.0 保留在 `dist/`，作为历史下载版本；仓库当前两个技能目录对应 v2.0。
 
 ## 选择技能
 
@@ -56,7 +67,7 @@ git clone https://github.com/XueHanan/xue_skill.git
 cd xue_skill
 ```
 
-仓库根目录的 `xue/` 与 `xue-plus/` 即为可安装技能。`dist/xue-skills(1.0).zip` 是上传时的原始技能包，保留原文件内容。
+仓库根目录的 `xue/` 与 `xue-plus/` 即为当前 v2.0 的可安装技能。`dist/xue-skills(2.0).zip` 是上传时的原始 v2.0 技能包，保留原文件内容；`dist/xue-skills(1.0).zip` 保留历史 v1.0。
 
 ## 使用示例
 
